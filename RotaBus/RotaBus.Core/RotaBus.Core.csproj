@@ -42,7 +42,11 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Mensalidade.cs" />
+    <Compile Include="Pagamento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rota.cs" />
+    <Compile Include="Semana.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
