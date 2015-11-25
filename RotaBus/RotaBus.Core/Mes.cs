@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace RotaBus.Core
 {
-    public class Class1
+    public class Mes
     {
+        public int id { get; set; }
+        public string nome { get; set; }
     }
 }

@@ -6,36 +6,33 @@ using System.Threading.Tasks;
 
 namespace RotaBus.Core
 {
-    public class Aluno
+    public class Motorista
     {
         public int id { get; set; }
         public string nome { get; set; }
         public int rg { get; set; }
         public int telefone { get; set; }
-        public string endereco { get; set; }
-        public int idMensalidade { get; set; }
-
+        public float salario { get; set; }
+        public string  endereco { get; set; }
 
         #region Construtor
-        public Aluno()
+        public Motorista()
         {
 
         }
 
-        public Aluno(int pId, string pNome,int pRg,int pTelefone, string pEndereco, int pIdMensalidade)
+        public Motorista(int pId, string pNome, int pRg, int pTelefone, string pEndereco, float pSalario)
         {
             id = pId;
             nome = pNome;
             rg = pRg;
             telefone = pTelefone;
             endereco = pEndereco;
-            idMensalidade = pIdMensalidade;
+            salario = pSalario;
         }
 
 
 
         #endregion
-
-
     }
 }
