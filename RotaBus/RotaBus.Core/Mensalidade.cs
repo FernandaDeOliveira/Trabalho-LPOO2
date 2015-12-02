@@ -1,6 +1,6 @@
 ﻿namespace RotaBus.Core
 {
-    class Mensalidade
+    public class Mensalidade
     {
         public int id { get; set; }
         public string dias { get; set; }
