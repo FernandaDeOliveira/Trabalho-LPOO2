@@ -14,6 +14,7 @@ namespace RotaBus.Core
         public int telefone { get; set; }
         public float salario { get; set; }
         public string  endereco { get; set; }
+        public int MyProperty { get; set; }
 
         #region Construtor
         public Motorista()
