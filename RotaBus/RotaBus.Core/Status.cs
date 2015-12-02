@@ -10,5 +10,6 @@ namespace RotaBus.Core
     {
         public int id { get; set; }
         public string situacao { get; set; }
+        public int MyProperty { get; set; }
     }
 }
