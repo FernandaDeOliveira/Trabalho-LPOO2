@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace RotaBus.Core
 {
-    class Aluno
+    public class Status
     {
+        public int id { get; set; }
+        public string situacao { get; set; }
+        public int MyProperty { get; set; }
     }
 }
