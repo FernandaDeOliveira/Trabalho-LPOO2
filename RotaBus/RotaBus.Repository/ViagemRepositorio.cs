@@ -75,7 +75,7 @@ namespace RotaBus.Repository
         {
             sql = new StringBuilder();
             sql.Append("SELECT * FROM viagem d ");
-            sql.Append("WHERE d.idAluno = @pId");
+            sql.Append("WHERE d.idAluno = @id");
 
             cmm.Parameters.AddWithValue("@id", pId);
 

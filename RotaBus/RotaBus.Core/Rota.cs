@@ -4,18 +4,18 @@
     {
         public int id { get; set; }
         public string nome { get; set; }
-        public int idMotorista { get; set; }
+        public Motorista motorista { get; set; }
 
         public Rota()
         {
 
         }
 
-        public Rota(int pId, string pNome, int pIdMotorista)
+        public Rota(int pId, string pNome, Motorista pMotorista)
         {
             id = pId;
             nome = pNome;
-            idMotorista = pIdMotorista;
+            motorista = pMotorista;
         }
     }
 }
