@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Admin.cs" />
     <Compile Include="Aluno.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Mensalidade.cs" />
     <Compile Include="Pagamento.cs" />
     <Compile Include="Mes.cs" />
