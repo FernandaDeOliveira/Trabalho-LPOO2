@@ -101,13 +101,37 @@ namespace RotaBus.Repository
         public void Delete(int pId)
         {
             sql = new StringBuilder();
-            sql.Append("DELETE FROM alunos ");
+            sql.Append("DELETE FROM rotas ");
             sql.Append("WHERE id = @id");
 
             cmm.Parameters.AddWithValue("@id", pId);
-
             cmm.CommandText = sql.ToString();
+            conn.ExecutarComando(cmm);
 
+            ///tem um if
+            sql = new StringBuilder();
+            sql.Append(" SELECT id FROM mensalidades ");
+            sql.Append("WHERE id = @id");
+
+            cmm.Parameters.AddWithValue("@id", pId);
+            cmm.CommandText = sql.ToString();
+            conn.ExecutarComando(cmm);
+
+            ///tem um update
+            sql = new StringBuilder();
+            sql.Append("UPDATE alunos SET ");
+            sql.Append(" idMensalidade = 0 WHERE idMensalidade=@id");
+
+            cmm.Parameters.AddWithValue("@id", pId);
+            cmm.CommandText = sql.ToString();
+            conn.ExecutarComando(cmm);
+
+            sql = new StringBuilder();
+            sql.Append("DELETE FROM mensalidades ");
+            sql.Append("WHERE idRota = @id");
+
+            cmm.Parameters.AddWithValue("@id", pId);
+            cmm.CommandText = sql.ToString();
             conn.ExecutarComando(cmm);
         }
 
