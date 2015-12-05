@@ -32,7 +32,6 @@ namespace RotaBus.Repository
                     
                     motorista = new Motorista
                     {
-                        id = (int)dr["idMotorista"],
                         nome = (string)dr["motorista"]
                     }
                 });
@@ -57,12 +56,13 @@ namespace RotaBus.Repository
         public void Update(Rota pRota)
         {
             sql = new StringBuilder();
-            sql.Append("UPDATE rotas");
-            sql.Append("SET nome = @nome, idMotorista=@idMotorista ");
+            sql.Append("UPDATE rotas ");
+            sql.Append("SET nome = @nome, idMotorista = @idMotorista ");
             sql.Append("WHERE id = @id");
 
             cmm.CommandText = sql.ToString();
 
+            cmm.Parameters.AddWithValue("@id", pRota.id);
             cmm.Parameters.AddWithValue("@nome", pRota.nome);
             cmm.Parameters.AddWithValue("@idMotorista", pRota.motorista.id);
 
@@ -72,8 +72,11 @@ namespace RotaBus.Repository
         public Rota GetOne(int pId)
         {
             sql = new StringBuilder();
-            sql.Append("SELECT * FROM rotas ");
-            sql.Append("WHERE id = @id");
+            sql.Append("SELECT r.id, r.nome, r.idMotorista, m.nome AS motorista ");
+            sql.Append("FROM rotas r ");
+            sql.Append("INNER JOIN motoristas m ");
+            sql.Append("ON m.id = r.idMotorista ");
+            sql.Append("WHERE r.id = @id");
 
             cmm.Parameters.AddWithValue("@id", pId);
 
@@ -101,7 +104,7 @@ namespace RotaBus.Repository
         public void Delete(int pId)
         {
             sql = new StringBuilder();
-            sql.Append("DELETE FROM alunos ");
+            sql.Append("DELETE FROM rotas ");
             sql.Append("WHERE id = @id");
 
             cmm.Parameters.AddWithValue("@id", pId);

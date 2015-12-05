@@ -1,0 +1,5 @@
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Core\bin\Debug\RotaBus.Core.dll
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Core\bin\Debug\RotaBus.Core.pdb
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Core\obj\Debug\RotaBus.Core.csprojResolveAssemblyReference.cache
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Core\obj\Debug\RotaBus.Core.dll
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Core\obj\Debug\RotaBus.Core.pdb

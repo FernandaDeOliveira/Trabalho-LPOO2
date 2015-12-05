@@ -22,7 +22,7 @@ namespace RotaBus.Repository
 
             sql = new StringBuilder();
             sql.Append("SELECT * ");
-            sql.Append("FROM motoristas  ");
+            sql.Append("FROM motoristas");
             cmm.CommandText = sql.ToString();
 
             MySqlDataReader dr = conn.ExecutarConsulta(cmm);
@@ -33,10 +33,10 @@ namespace RotaBus.Repository
                 {
                     id = (int)dr["id"],
                     nome = (string)dr["nome"],
-                    rg = (int)dr["rg"],
-                    telefone = (int)dr["telefone"],
+                    rg = (string)dr["rg"],
+                    telefone = (string)dr["telefone"],
                     endereco = (string)dr["endereco"],
-                    salario = (int)dr["salario"]
+                    salario = (float)dr["salario"]
 
                 });
             }
@@ -98,8 +98,8 @@ namespace RotaBus.Repository
             {
                 id = (int)dr["id"],
                 nome = (string)dr["nome"],
-                rg = (int)dr["rg"],
-                telefone = (int)dr["telefone"],
+                rg = (string)dr["rg"],
+                telefone = (string)dr["telefone"],
                 endereco = (string)dr["endereco"],
                 salario = (int)dr["salario"]
 

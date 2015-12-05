@@ -1,0 +1,25 @@
+﻿@model RotaBus.Core.Rota
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+<div class="panel">
+    <form action="/Rota/Update" method="post">
+        <input type="hidden" name="id" value="@Model.id"/>
+        <div class="form-group">
+            <label>Nome</label>
+            <input class="form-control" type="text" required name="nome" value="@Model.nome"/>
+        </div>
+        <div class="form-group">
+            <label>Selecione o Motorista</label>
+            <select class="form-control" name="motorista.id">
+                @foreach (RotaBus.Core.Motorista item in ViewBag.Motoristas)
+                {
+                    <option value="@item.id">@item.nome</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-default">Salvar</button>
+    </form>
+</div>

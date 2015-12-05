@@ -1,0 +1,10 @@
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\obj\Debug\RotaBus.Repository.csprojResolveAssemblyReference.cache
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\bin\Debug\RotaBus.Repository.dll
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\bin\Debug\RotaBus.Repository.pdb
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\bin\Debug\MySql.Data.dll
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\bin\Debug\RotaBus.Connection.dll
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\bin\Debug\RotaBus.Core.dll
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\bin\Debug\RotaBus.Connection.pdb
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\bin\Debug\RotaBus.Core.pdb
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\obj\Debug\RotaBus.Repository.dll
+C:\Users\milen\Documents\GitHub\Trabalho-LPOO2\RotaBus\RotaBus.Repository\obj\Debug\RotaBus.Repository.pdb

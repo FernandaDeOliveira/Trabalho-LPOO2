@@ -10,7 +10,7 @@ namespace RotaBus.Connection
 
         public string connString
         {
-            get { return "Server=localhost;Database=lpw_trabalhog2;Uid=root;Pwd=vertrigo;"; }
+            get { return "Server=localhost;Database=lpw_trabalhog2;Uid=root;Pwd=;"; }
         }
 
         private void Conectar()
