@@ -1,11 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using RotaBus.Connection;
 using RotaBus.Core;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace RotaBus.Repository
 {
@@ -21,7 +18,6 @@ namespace RotaBus.Repository
             sql = new StringBuilder();
             sql.Append("SELECT r.id, r.nome, m.nome AS motorista FROM rotas r ");
             sql.Append("INNER JOIN motoristas m ON m.id = r.idMotorista");
-
            
             cmm.CommandText = sql.ToString();
 
@@ -151,5 +147,4 @@ namespace RotaBus.Repository
             return alunos;
         }
     }
-}
 }

@@ -1,22 +1,16 @@
 ﻿using MySql.Data.MySqlClient;
 using RotaBus.Connection;
 using RotaBus.Core;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace RotaBus.Repository
 {
     public class SemanaRepositorio
     {
-
         Conexao conn = new Conexao();
         MySqlCommand cmm = new MySqlCommand();
         StringBuilder sql;
-
-
 
         public IEnumerable<Semana> GetAll()
         {
@@ -42,7 +36,6 @@ namespace RotaBus.Repository
             return semana;
         }
 
-
         public Semana GetOne(int pId)
         {
             sql = new StringBuilder();
@@ -67,6 +60,5 @@ namespace RotaBus.Repository
 
             return editar;
         }
-
     }
 }

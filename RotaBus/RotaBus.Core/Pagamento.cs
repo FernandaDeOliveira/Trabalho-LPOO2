@@ -3,23 +3,23 @@
     public class Pagamento
     {
         public int id { get; set; }
-        public int idStatus { get; set; }
-        public int idMes { get; set; }
         public float valor { get; set; }
-        public int idAluno { get; set; }
+        public Status status { get; set; }
+        public Mes mes { get; set; }
+        public Aluno aluno { get; set; }
 
         public Pagamento()
         {
 
         }
 
-        public Pagamento(int pId, int pIdStatus, int pIdMes, float pValor, int pIdAluno)
+        public Pagamento(int pId, float pValor, Status pStatus, Mes pMes, Aluno pAluno)
         {
-            id = pId;
-            idStatus = pIdStatus;
-            idMes = pIdMes;
+            id = pId;            
             valor = pValor;
-            idAluno = pIdAluno;
+            status = pStatus;
+            mes = pMes;
+            aluno = pAluno;
         }
     
     }
