@@ -1,0 +1,6 @@
+C:\Users\FERNANDA OLIVEIRA\Desktop\Trabalho-LPOO2\RotaBus\RotaBus.Connection\bin\Debug\RotaBus.Connection.dll
+C:\Users\FERNANDA OLIVEIRA\Desktop\Trabalho-LPOO2\RotaBus\RotaBus.Connection\bin\Debug\RotaBus.Connection.pdb
+C:\Users\FERNANDA OLIVEIRA\Desktop\Trabalho-LPOO2\RotaBus\RotaBus.Connection\bin\Debug\MySql.Data.dll
+C:\Users\FERNANDA OLIVEIRA\Desktop\Trabalho-LPOO2\RotaBus\RotaBus.Connection\obj\Debug\RotaBus.Connection.csprojResolveAssemblyReference.cache
+C:\Users\FERNANDA OLIVEIRA\Desktop\Trabalho-LPOO2\RotaBus\RotaBus.Connection\obj\Debug\RotaBus.Connection.dll
+C:\Users\FERNANDA OLIVEIRA\Desktop\Trabalho-LPOO2\RotaBus\RotaBus.Connection\obj\Debug\RotaBus.Connection.pdb
