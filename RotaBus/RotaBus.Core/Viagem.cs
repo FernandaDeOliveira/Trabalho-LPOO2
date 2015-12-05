@@ -10,7 +10,6 @@ namespace RotaBus.Core
     {
         public int idAluno { get; set; }
         public int idRota { get; set; }
-        public int idSemana { get; set; }
-        public int MyProperty { get; set; }
+        public int idSemana { get; set; }        
     }
 }

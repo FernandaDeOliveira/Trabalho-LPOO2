@@ -8,12 +8,9 @@ namespace RotaBus.Repository
 {
     public class StatusRepositorio
     {
-
         Conexao conn = new Conexao();
         MySqlCommand cmm = new MySqlCommand();
         StringBuilder sql;
-
-
 
         public IEnumerable<Status> GetAll()
         {
@@ -32,13 +29,10 @@ namespace RotaBus.Repository
                 {
                     id = (int)dr["id"],
                     situacao = (string)dr["situacao"]
-
-
                 });
             }
             return status;
         }
-
 
         public Status GetOne(int pId)
         {
@@ -58,12 +52,9 @@ namespace RotaBus.Repository
             {
                 id = (int)dr["id"],
                 situacao = (string)dr["situacao"]
-
-
             };
 
             return editar;
         }
-
     }
 }

@@ -49,8 +49,7 @@ namespace RotaBus.Repository
             cmm.CommandText = sql.ToString();
 
             cmm.Parameters.AddWithValue("@nome",pRota.nome);
-            cmm.Parameters.AddWithValue("@idMotorista", pRota.motorista);
-           
+            cmm.Parameters.AddWithValue("@idMotorista", pRota.motorista.id);           
 
             conn.ExecutarComando(cmm);
         }
@@ -65,7 +64,7 @@ namespace RotaBus.Repository
             cmm.CommandText = sql.ToString();
 
             cmm.Parameters.AddWithValue("@nome", pRota.nome);
-            cmm.Parameters.AddWithValue("@idMotorista", pRota.motorista);
+            cmm.Parameters.AddWithValue("@idMotorista", pRota.motorista.id);
 
             conn.ExecutarComando(cmm);
         }

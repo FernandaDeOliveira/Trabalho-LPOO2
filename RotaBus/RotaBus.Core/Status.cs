@@ -9,7 +9,6 @@ namespace RotaBus.Core
     public class Status
     {
         public int id { get; set; }
-        public string situacao { get; set; }
-        public int MyProperty { get; set; }
+        public string situacao { get; set; }        
     }
 }
