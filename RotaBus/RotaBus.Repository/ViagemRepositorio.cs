@@ -39,7 +39,7 @@ namespace RotaBus.Repository
         public void Create(Viagem pViagem)
         {
             sql = new StringBuilder();
-            sql.Append("INSERT INTO viagem ");
+            sql.Append("INSERT INTO viagem(idAluno,idRota,idSemana ");
             sql.Append("VALUES(@idAluno, @idRota, @idSemana)");
 
             cmm.CommandText = sql.ToString();
