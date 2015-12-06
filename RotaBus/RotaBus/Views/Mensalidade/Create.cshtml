@@ -1,0 +1,32 @@
+﻿@model RotaBus.Core.Mensalidade
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+<div class="panel">
+    <form action="/Mensalidade/Create" method="post">
+        <div class="form-group">
+            <label>Dias: </label>
+            <label class="radio-inline"><input type="radio" checked="true" name="dias" value="1">1 dia</label>
+            <label class="radio-inline"><input type="radio" name="dias" value="2">2 dias</label>
+            <label class="radio-inline"><input type="radio" name="dias" value="3">3 dias</label>
+            <label class="radio-inline"><input type="radio" name="dias" value="4">4 dias</label>
+            <label class="radio-inline"><input type="radio" name="dias" value="5">5 dias</label>
+        </div>
+        <div class="form-group">
+            <label>Custo</label>
+            <input class="form-control" type="text" required name="custo" />
+        </div>
+        <div class="form-group">
+            <label>A que rota pertence essa mensalidade?</label>
+            <select class="form-control" name="motorista.id">
+                @foreach (RotaBus.Core.Motorista item in ViewBag.Motoristas)
+                {
+                    <option value="@item.id">@item.nome</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-default">Salvar</button>
+    </form>
+</div>

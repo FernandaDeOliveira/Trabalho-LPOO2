@@ -1,0 +1,32 @@
+﻿@model IEnumerable<RotaBus.Core.Mensalidade>
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    <a href="~/Mensalidade/Create/">Nova Mensalidade</a>
+</p>
+<table class="table">
+    <tr>
+        <th>Código</th>
+        <th>Rota</th>
+        <th>Dias</th>
+        <th>Custo</th>
+        <th>Ações</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.rota.nome</td>
+            <td>@item.dias</td>
+            <td>@item.custo</td>
+            <td>
+                <a href="~/Mensalidade/Update/@item.id">Edit</a> |
+                <a href="~/Mensalidade/Delete/@item.id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
